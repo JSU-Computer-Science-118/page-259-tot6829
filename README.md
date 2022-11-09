@@ -1,9 +1,5 @@
 //Tatiyana Moore     J00922658     11/8/22
 
-#include <iostream>
-using namespace std;
-
-int main()
 {
 	double a, b, c, x1, x2;
 	double discriminant, firstRoot, secondRoot;
