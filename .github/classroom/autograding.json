@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Two Real Root Test 1a",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "1 1 0",
+      "output": "Two real roots\r\n- First root 0\r\n- Second root -1",
+      "comparison": "exact",
+      "timeout": 4,
+      "points": 5
+    },
+    {
+      "name": "Two Real Root Test 1b",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "1 6 3",
+      "output": "Two real roots\r\n- First root -0.55051\r\n- Second root -5.44949",
+      "comparison": "exact",
+      "timeout": 4,
+      "points": 5
+    },
+    {
+      "name": "Complex Root Test 2a",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "1 -3 4",
+      "output": "Complex roots",
+      "comparison": "exact",
+      "timeout": 4,
+      "points": 5
+    },
+    {
+      "name": "Complex Root Test 2b",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "1 2 6",
+      "output": "Complex roots",
+      "comparison": "exact",
+      "timeout": 4,
+      "points": 5
+    },
+    {
+      "name": "Single Root Test 3a",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "2 4 2",
+      "output": "The single root is -1",
+      "comparison": "exact",
+      "timeout": 4,
+      "points": 5
+    },
+    {
+      "name": "Single Root Test 3b",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "2 8 8",
+      "output": "The single root is -2",
+      "comparison": "exact",
+      "timeout": 4,
+      "points": 5
+    },
+    {
+      "name": "Test for A",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "0 2 2",
+      "output": "Invalid entry",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Compile Test",
+      "setup": "cmake . && make",
+      "run": "./page259",
+      "input": "1",
+      "output": "[a-zA-Z0-9]+",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
